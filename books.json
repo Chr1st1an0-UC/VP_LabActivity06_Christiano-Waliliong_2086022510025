@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Pemrograman Dart & Flutter",
+    "author": "Andi",
+    "replacementPrice": 150000.0,
+    "copies": 3
+  },
+  {
+    "title": "Algoritma & Struktur Data",
+    "author": "Budi",
+    "replacementPrice": 200000.0,
+    "copies": 2
+  }
+]

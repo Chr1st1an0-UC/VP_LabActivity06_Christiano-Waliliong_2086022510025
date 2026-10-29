@@ -1,0 +1,5 @@
+1. **Model** merepresentasikan struktur data entitas (seperti buku dan peminjaman), **View** adalah antarmuka pengguna (UI) yang menampilkan data, dan **ViewModel** bertindak sebagai perantara yang mengelola logika state dan aksi antara View dan data.
+2. Peminjaman harus ditolak karena satu eksemplar buku spesifik tidak boleh dipinjam ganda atau dipinjam ulang sebelum dikembalikan terlebih dahulu.
+3. Menghindari duplikasi kode (*DRY - Don't Repeat Yourself*), memastikan konsistensi perhitungan denda di seluruh aplikasi, dan memudahkan pemeliharaan jika aturan kebijakan denda berubah.
+4. **Overdue** berarti masa peminjaman telah melewati tanggal jatuh tempo, sedangkan **Missing** terjadi ketika keterlambatan sudah melampaui batas waktu 6 bulan yang mengubah status buku menjadi hilang dan dikenakan biaya penggantian.
+5. Cukup ubah nilai nominal denda pada satu tempat terpusat di layanan kebijakan denda (`FinePolicyService`), tanpa perlu mengubah kode di bagian UI atau ViewModel.
